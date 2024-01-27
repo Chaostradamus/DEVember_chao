@@ -1,5 +1,7 @@
 import { Stack } from "expo-router";
 import { useEffect } from "react";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+
 import {
   useFonts,
   Inter_900Black,
@@ -21,6 +23,8 @@ export default function RootLayout() {
     Inter: Inter_400Regular,
     InterSemi: Inter_600SemiBold,
     InterBold: Inter_700Bold,
+    InterBlack: Inter_900Black,
+
     Amatic: AmaticSC_400Regular,
     AmaticBold: AmaticSC_700Bold,
   });
@@ -36,8 +40,10 @@ export default function RootLayout() {
   }
 
   return (
-    <Stack screenOptions={{}}>
-      <Stack.Screen name="index" options={{ title: "DEVember" }} />
-    </Stack>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Stack screenOptions={{}}>
+        <Stack.Screen name="index" options={{ title: "DEVember" }} />
+      </Stack>
+    </GestureHandlerRootView>
   );
 }

@@ -8,8 +8,8 @@ const DayDetailsScreen = () => {
       <Stack.Screen options={{ title: "Day 2: Onboarding" }} />
       <Text>Day Details Screen</Text>
 
-      <Link href={"/day2/onboarding"} asChild>
-      <Button title='Go to onboarding' />
+      <Link href="/day2/onboarding" asChild>
+        <Button title="Go to onboarding" />
       </Link>
     </View>
   );

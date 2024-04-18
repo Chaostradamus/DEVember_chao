@@ -23,3 +23,18 @@ const DayDetailsScreen = () => {
 };
 
 export default DayDetailsScreen;
+
+// add protected screen 
+// import { View, Text } from "react-native";
+// import React from "react";
+
+// const ProtectedScreen = () => {
+//   return (
+//     <View>
+//       <Text></Text>
+//     </View>
+//   );
+// };
+
+// export default ProtectedScreen;
+

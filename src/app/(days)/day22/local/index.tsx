@@ -4,7 +4,7 @@ import React from 'react'
 const LocalFirstApp = () => {
   return (
     <View>
-      <Text> LocalFirstApp</Text>
+      <Text>We finished!</Text>
     </View>
   )
 }
